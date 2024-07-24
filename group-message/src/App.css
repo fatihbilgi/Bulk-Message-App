@@ -1,0 +1,216 @@
+.App {
+  padding: 10px;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  padding-top: 0px !important;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  margin: 20px;
+}
+
+.logo {
+  width: 140px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.templates-container {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.channel{
+  margin-bottom: 10px;
+}
+
+.filters-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  width: 25%;
+}
+
+.filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.filters > * {
+  margin-right: 10px;
+  margin-bottom: 10px;
+  width: calc(100% - 10px);
+}
+
+.filters label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.filters input[type="date"],
+.filters select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: calc(100% - 16px);
+}
+
+.filters button {
+  padding: 8px 20px;
+  background-color: #113c4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.filters button:hover {
+  background-color: #0056b3;
+}
+
+.clear-button {
+  background-color: red !important;
+}
+
+.message-container {
+  flex-direction: column;
+  margin-bottom: 20px;
+  width: 100%;
+}
+
+.message-input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #113c4f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.update-button {
+  padding: 10px 20px;
+  background-color: #fe521e;
+  margin-left: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.update-button:hover {
+  background-color: #0056b3;
+}
+
+.data-container {
+  width: 100%;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 11px;
+}
+
+table th,
+table td {
+  padding: 12px;
+  border: 1px solid #ddd;
+  text-align: center;
+}
+
+table th {
+  background-color: #f2f2f2;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+table tr:hover {
+  background-color: #f2f2f2;
+}
+
+.loader-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.loader {
+  margin: 0 auto;
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .header {
+    justify-content: center;
+  }
+
+  .filters-container {
+    width: 100%;
+  }
+
+  .filters > * {
+    width: 100%;
+  }
+
+  .filters input[type="date"],
+  .filters select {
+    width: 100%;
+  }
+
+  .message-container {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .message-input {
+    width: 100%;
+    margin-right: 0;
+  }
+
+  .send-button, .update-button {
+    width: 40%;
+  }
+
+  .loader-container{
+    display: block;
+    overflow-x: auto;
+  }
+
+  .data-container {
+    display: contents;
+  }
+}

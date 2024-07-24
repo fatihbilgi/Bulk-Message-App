@@ -1,0 +1,30 @@
+.login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50vh;
+    overflow-x: hidden;
+}
+
+.login-input {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #113c4f;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #0056b3;
+}
